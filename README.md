@@ -14,7 +14,7 @@ Which led me to make a website where I, and my friends, could express what we
 thought was cool and consumable.
 
 Materials Creative Co. is a website where a user can view t-shirts, find
-t-shirts, and the ability to upload there own to demonstrate their awesome
+t-shirts, with the ability to upload there own to demonstrate their awesome
 t-shirt style.
 
 # Technologies Used
@@ -37,11 +37,11 @@ t-shirt style.
 
 * Adobe Illustrator CC
 
-## Inspirations
+### Inspirations
 
-### [Dribbble](https://dribbble.com/)
+##### [Dribbble](https://dribbble.com/)
 
-## Devoloper
+### Devoloper
 
-### [Josh Seipel](https://github.com/jaguarj)
-### [Portfoilio](https://jaguarj.github.io/myportfolio/)
+##### [Josh Seipel](https://github.com/jaguarj)
+##### [Portfoilio](https://jaguarj.github.io/myportfolio/)
