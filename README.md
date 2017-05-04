@@ -39,9 +39,9 @@ t-shirt style.
 
 ## Inspirations
 
-## [Dribbble](https://dribbble.com/)
+### [Dribbble](https://dribbble.com/)
 
-# Devoloper
+## Devoloper
 
-## [Josh Seipel](https://github.com/jaguarj)
-## [Portfoilio](https://jaguarj.github.io/myportfolio/)
+### [Josh Seipel](https://github.com/jaguarj)
+### [Portfoilio](https://jaguarj.github.io/myportfolio/)
