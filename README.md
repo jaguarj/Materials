@@ -1,24 +1,47 @@
-# README
+# Materials Creative Co.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Materials Creative Co.** is a company dedicated to finding really awesome
+t-shirts that you'll actually want to wear! The idea came to be when I went
+to a clothing store years ago never finding anything I would actually
+want to wear. This lack of awesomeness lit a fire to start making my own
+t-shirts while learning screen printing at home.
 
-Things you may want to cover:
+Thrifting was also another fun adventure, but that takes a lot of time
+sifting through all the hand-me-downs at Goodwill, plus there is no guarentee
+you'll actually find something.
 
-* Ruby version
+Which led me to make a website where I, and my friends, could express what we
+thought was cool and consumable.
 
-* System dependencies
+Materials Creative Co. is a website where a user can view t-shirts, find
+t-shirts, and the ability to upload there own to demonstrate their awesome
+t-shirt style.
 
-* Configuration
+# Technologies Used
 
-* Database creation
+* HTML & SCSS
 
-* Database initialization
+* Ruby on Rails
 
-* How to run the test suite
+* Angular Js
 
-* Services (job queues, cache servers, search engines, etc.)
+* Facebook Api
 
-* Deployment instructions
+* Twitter Api
 
-* ...
+* Git & GitHub
+
+* Heroku
+
+* CLI
+
+* Adobe Illustrator CC
+
+## Inspirations
+
+## [Dribbble](https://dribbble.com/)
+
+# Devoloper
+
+## [Josh Seipel](https://github.com/jaguarj)
+## [Portfoilio](https://jaguarj.github.io/myportfolio/)
