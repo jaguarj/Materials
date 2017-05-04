@@ -1,0 +1,15 @@
+// <!-- #app/assets/javascripts/components/homePage/homePage.js.erb -->
+angular
+	.module('Materials')
+	.component('homePage', {
+		templateUrl: '<%= asset_path("components/homePage/homePage") %>',
+		controller: HomePageController
+	});
+
+HomePageController.$inject = [];
+
+function HomePageController() {
+	var vm = this;
+
+	vm.message = "Hello Josh";
+}
