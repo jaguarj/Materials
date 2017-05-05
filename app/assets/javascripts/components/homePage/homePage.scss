@@ -1,12 +1,26 @@
 body {
-	background: lightblue;
+		background: lightblue;
 
 	h1 {
 		font-family: Arial, sans-serif;
 		color: red;
+
 	}
 
- 	p {
+ 	p.test-p {
+ 		display: flex;
+ 		justify-content: center;
+ 		margin-top: 200px;
  		color: blue;
+
+ 	}
+
+ 	.test-container {
+ 		box-sizing: border-box;
+ 		min-height: 400px;
+ 		max-width: 50%;
+ 		border: 20px solid black;
+ 		background: orange;
+
  	}
 }
