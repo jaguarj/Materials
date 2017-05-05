@@ -15,5 +15,36 @@
  *= require_tree .
  *= require_tree ../javascripts/components/
  */
+body {
+	margin: 0;
+}
+
+header {
+	background: red;
+	display: flex;
+	justify-content: space-between;
+	height: 4rem;
+
+}
+
+.logo {
+	background: yellow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+nav {
+	background: teal;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
 
 
+
+/*a {
+	padding: 3rem;
+}*/
