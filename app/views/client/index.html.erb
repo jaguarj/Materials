@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html ng-app="Materials">
   <head>
-    <title>AngularOnRails</title>
+    <title>Materials</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -10,6 +10,10 @@
   </head>
 
   <body>
+  <header>
+    <div class="logo">
+      <img ng-src="#" alt="materials logo"/>
+    </div>
     <nav>
       <% if user_signed_in? %>
         <%= link_to 'Home', root_path %>
@@ -17,6 +21,9 @@
         <%= link_to 'Sign out', destroy_user_session_path, method: 'delete', target: '_self' %>
       <% end %>
     </nav>
+  </header>
+
+
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
