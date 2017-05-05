@@ -11,13 +11,23 @@ body {
 
 	}
 
+	.main-test-container {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin: 10px 1px;
+		background: #eee;
+
+	}
+
  	.test-container {
  		display: flex;
  		align-items: center;
- 		justify-content: center;
+ 		justify-content: space-around;
  		box-sizing: border-box;
- 		min-height: 400px;
- 		min-width: 50%;
+ 		max-height: 400px;
+ 		padding: 20px;
+ 		margin: 10px 0px;
  		border: 20px solid black;
  		background: orange;
 
