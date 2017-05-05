@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 		background: lightblue;
 
@@ -7,20 +11,29 @@ body {
 
 	}
 
- 	p.test-p {
- 		display: flex;
- 		justify-content: center;
- 		margin-top: 200px;
- 		color: blue;
-
- 	}
-
  	.test-container {
+ 		display: flex;
+ 		align-items: center;
+ 		justify-content: center;
  		box-sizing: border-box;
  		min-height: 400px;
- 		max-width: 50%;
+ 		min-width: 50%;
  		border: 20px solid black;
  		background: orange;
 
+ 	}
+
+ 	.test-inside-container {
+ 		display: flex;
+ 		align-items: center;
+ 		width: auto;
+ 		height: 200px;
+ 		background: red;
+ 		border: 2px solid black;
+
+ 	}
+
+ 	p.test-p {
+ 		color: blue;
  	}
 }
