@@ -23,6 +23,10 @@ t-shirt style.
 
 * Ruby on Rails
 
+* PostgreSQL
+
+* Active Record
+
 * Angular Js
 
 * Facebook Api
@@ -39,9 +43,9 @@ t-shirt style.
 
 ### Inspirations
 
-##### [Dribbble](https://dribbble.com/)
+#### [Dribbble](https://dribbble.com/)
 
-### Devoloper
+### Developer
 
-##### [Josh Seipel](https://github.com/jaguarj)
-##### [Portfoilio](https://jaguarj.github.io/myportfolio/)
+#### [Josh Seipel](https://github.com/jaguarj)
+#### [Portfoilio](https://jaguarj.github.io/myportfolio/)
