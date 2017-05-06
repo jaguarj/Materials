@@ -13,9 +13,9 @@ you'll actually find something.
 Which led me to make a website where I, and my friends, could express what we
 thought was cool and consumable.
 
-Materials Creative Co. is a website where a user can view t-shirts, find
-t-shirts, with the ability to upload there own to demonstrate their awesome
-t-shirt style.
+**Materials Creative Co.** is a website where a user can view t-shirts, find
+t-shirts, and have the ability to upload their own to demonstrate their
+awesome t-shirt style.
 
 # Technologies Used
 
