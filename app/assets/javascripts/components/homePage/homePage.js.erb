@@ -6,12 +6,16 @@ angular
 		controller: HomePageController
 	});
 
-HomePageController.$inject = [];
+HomePageController.$inject = [$http];
 
-function HomePageController() {
+function HomePageController($http) {
 	var vm = this;
 
 	vm.welcome = "Welcome to Materials Creative Co."
 	vm.message = "Hello Josh";
+
+	$http.get('/api/shirts').then(function(resp) {
+		vm.shirts = resp.data;
+	});
 
 }

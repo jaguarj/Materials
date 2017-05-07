@@ -26,7 +26,22 @@ angular
 			.state('home', {
 				url: '/',
 				component: 'homePage'
+			})
+
+
+			.state('shirts', {
+				url: '/shirts',
+				component: 'shirtsPage'
+			})
+
+			.state('comments', {
+				url: '/comments',
+				component: 'commentsPage'
 			});
+
+
+
+
 
 	// Fallback router
 	$urlRouterProvider.otherwise('/');

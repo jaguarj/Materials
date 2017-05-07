@@ -1,0 +1,101 @@
+/* line 1, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/homePage/homePage.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/homePage/homePage.scss */
+body {
+  background: lightblue;
+}
+/* line 8, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/homePage/homePage.scss */
+body h1 {
+  font-family: Arial, sans-serif;
+  color: red;
+}
+/* line 14, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/homePage/homePage.scss */
+body .main-test-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px 1px;
+  padding: .5rem;
+  background: #eee;
+}
+/* line 25, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/homePage/homePage.scss */
+body .test-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  max-height: 400px;
+  padding: 20px;
+  margin: 10px 0px;
+  border: 20px solid black;
+  background: orange;
+}
+/* line 38, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/homePage/homePage.scss */
+body .test-inside-container {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 200px;
+  background: red;
+  border: 2px solid black;
+}
+/* line 48, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/homePage/homePage.scss */
+body p.test-p {
+  color: blue;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+
+
+ */
+
+
+body {
+	margin: 0;
+}
+
+header {
+	background: red;
+	display: flex;
+	justify-content: space-between;
+	height: 4rem;
+
+}
+
+.logo {
+	background: yellow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+nav {
+	background: teal;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+
+
+/*a {
+	padding: 3rem;
+}*/

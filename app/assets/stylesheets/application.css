@@ -11,10 +11,12 @@
  * It is generally better to create a new file per style scope.
  *
 
- *= require_self
- *= require_tree .
+
  *= require_tree ../javascripts/components/
+ *= require_tree .
+ *= require_self
  */
+
 body {
 	margin: 0;
 }
