@@ -1,10 +1,10 @@
 angular
 	.module('Materials')
-	.factory('shirtsSevice', shirtsSevice);
+	.factory('shirtsService', shirtsService);
 
-shirtsSevice.$inject = ['$http'];
+shirtsService.$inject = ['$http'];
 
-function shirtsSevice($http) {
+function shirtsService($http) {
 	var service = {};
 
 	service.getShirts = getShirts;
@@ -26,7 +26,7 @@ function shirtsSevice($http) {
 		return $http.post('/api/shirts/', shirt);
 	}
 
-	function updatedShirt(shirt) {
+	function updateShirt(shirt) {
 		return $http.put('/api/shirts/' + shirt.id, shirt);
 	}
 }

@@ -4,11 +4,10 @@ Rails.application.routes.draw do
 
   namespace :api do
   	resources :shirts
-  end
-
-  namespace :api do
   	resources :comments
   end
+
+
 
 
   root to: 'client#index'

@@ -1,0 +1,29 @@
+<h1>Shirts Page</h1>
+
+<p>
+	{{ $ctrl.message }}
+
+
+	{{ 5 + 5 }}
+</p>
+
+
+<!-- Main Container for all divs on page -->
+<div ng-repeat="shirt in $ctrl.shirts" class="main-test-container">
+	<img ng-src="{{shirt.image}}"/>
+	<p>{{ shirt.name }}</p>
+	<p>{{ shirt.bio }}</p>
+	<p>{{ shirt.url }}</p>
+
+
+	<!-- Inside container that contains the Img with a black border -->
+	<div class="test-container">
+
+		<!-- test-inside-container will be the main the container for the image itself. -->
+		<div class="test-inside-container">
+
+			<p class='test-p'>
+				javascripts/components/homePage.html
+			</p>
+		</div>
+	</div>

@@ -1,6 +1,6 @@
 angular
 	.module('Materials')
-	.component('CommentsPage', {
+	.component('commentsPage', {
 		templateUrl: '<%= asset_path("components/CommentsPage/CommentsPage") %>',
 		controller: CommentsPageController
 	});
@@ -10,7 +10,8 @@ CommentsPageController.$inject = [];
 function CommentsPageController() {
 	var vm = this;
 
-	vm.welcome = "Welcome to Materials Creative Co."
-	vm.message = "Shirts Page Controller;
-
-}
+	vm.comment = {
+		content: '',
+		published_date: ''
+	}
+};

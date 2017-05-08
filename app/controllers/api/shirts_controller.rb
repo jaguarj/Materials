@@ -1,11 +1,12 @@
 class Api::ShirtsController < ApplicationController
   def index
-  	@shirts = current_user.shirts
+  	@shirts = Shirt.all
   	render json: @shirts
   end
 
   def show
-  	@shirt = current_user.shirts.find(params[:id])
+    # This is the controller action i want to hit for shirtsShow
+  	@shirt = Shirt.find(params[:id])
   	render json: @shirt
   end
 
