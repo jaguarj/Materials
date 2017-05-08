@@ -1,38 +1,34 @@
 <h1>Shirts Page</h1>
 
-<!-- Main Container for all divs on page -->
-<div ng-repeat="shirt in $ctrl.shirts" class="main-test-container">
+<div class="shirts-body-page-container">
+	<!-- Main Container for all divs on page -->
+	<div ng-repeat="shirt in $ctrl.shirts" class="main-test-container">
 
-<div class="test-container">
-	<div class="shirt-container">
-		<img class="shirt" ng-src="{{ shirt.image }}"/>
-	</div>
+	<div class="test-container">
+		<div class="shirt-container">
+			<img class="shirt" ng-src="{{ shirt.image }}"/>
+		</div>
 
-	<div class="shirt-details-container">
+		<div class="shirt-details-container">
 
-		<div class="test-inside-container">
+			<div class="test-inside-container">
 
-			<div class="shirt-name-container">
-			<h2>{{ shirt.name }}</h2>
+				<div class="shirt-name-container">
+				<h2>{{ shirt.name }}</h2>
 
-			</div>
+				</div>
 
-			<div class="shirt-bio-container">
-			<h4>{{ shirt.bio }}</h4>
-			</div>
+				<div class="shirt-bio-container">
+				<h4>{{ shirt.bio }}</h4>
+				</div>
 
-			<div class="shirt-link-container">
-			<a class="shirt-link" href="{{ shirt.url }}">Find Me!</a>
+				<div class="shirt-link-container">
+				<a class="shirt-link" href="{{ shirt.url }}">Find Me!</a>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-
-
-
-
-
 
 
 
