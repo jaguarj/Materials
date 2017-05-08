@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+		background: lightblue;
+
+	h1 {
+		font-family: Arial, sans-serif;
+		color: red;
+
+	}
+
+	.main-test-container {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin: 10px 1px;
+		padding: .5rem;
+		background: yellow;
+
+
+	}
+
+ 	.test-container {
+ 		display: flex;
+ 		align-items: center;
+ 		justify-content: space-around;
+ 		box-sizing: border-box;
+ 		max-height: 400px;
+ 		padding: 20px;
+ 		margin: 10px 0px;
+ 		border: 20px solid black;
+ 		background: orange;
+
+ 	}
+
+ 	.test-inside-container {
+ 		display: flex;
+ 		align-items: center;
+ 		width: auto;
+ 		height: 200px;
+ 		background: red;
+ 		border: 2px solid black;
+
+ 	}
+
+ 	p.test-p {
+ 		color: blue;
+ 	}
+}
