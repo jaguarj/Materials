@@ -9,21 +9,34 @@
 			<img class="shirt" ng-src="{{ shirt.image }}"/>
 		</div>
 
+
+		<div class='shirt-buttons'>
+
+			<div class="shirt-link-container">
+				<button><a class="share-link" href="www.facebook.com">Share!</a></button>
+			</div>
+
+			<div class="shirt-link-container">
+				<button><a class="shirt-link" href="{{ shirt.url }}">Find Me!</a></button>
+			</div>
+
+			<div class="shirt-link-container">
+				<button><a class="comment-link" href="#">Comments!</a></button>
+			</div>
+
+		</div>
+
 		<div class="shirt-details-container">
 
 			<div class="test-inside-container">
 
-				<div class="shirt-name-container">
-				<h2>{{ shirt.name }}</h2>
 
+				<div class="shirt-name-container">
+					<h2>{{ shirt.name }}</h2>
 				</div>
 
 				<div class="shirt-bio-container">
-				<h4>{{ shirt.bio }}</h4>
-				</div>
-
-				<div class="shirt-link-container">
-				<a class="shirt-link" href="{{ shirt.url }}">Find Me!</a>
+					<h4>{{ shirt.bio }}</h4>
 				</div>
 			</div>
 		</div>

@@ -80,7 +80,36 @@ body {
  		background: gray;
  	}
 
- 	.shirt-link {
- 		color: blue;
+
+ 	.shirt-buttons {
+ 		background: blue;
+ 		display: flex;
+ 		align-items: center;
+ 		justify-content: space-between;
+ 		width: 100%;
+ 		padding: 1rem;
+
  	}
+
+ 	button {
+ 		border: none;
+ 		background: black;
+ 		color: white;
+ 		height: 2rem;
+
+ 	}
+
+ 	a.share-link, a.shirt-link, a.comment-link {
+ 		font-size: 1rem;
+ 		color: white;
+ 		padding: 2rem;
+ 		letter-spacing: .2rem;
+
+ 	}
+
+ 	a {
+ 		text-decoration: none;
+ 	}
+
+
 }
