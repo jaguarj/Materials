@@ -9,7 +9,7 @@
 			<img class="shirt" ng-src="{{ shirt.image }}"/>
 		</div>
 
-
+<!-- Add the shirt buttons class to the shirts show page -->
 		<div class='shirt-buttons'>
 
 			<div class="shirt-link-container">
@@ -30,14 +30,22 @@
 
 			<div class="test-inside-container">
 
-
+			<div class="name-bio-icon-container">
 				<div class="shirt-name-container">
-					<h2>{{ shirt.name }}</h2>
+					<h2 id="shirt-name-text">Name: {{ shirt.name }}</h2>
 				</div>
 
 				<div class="shirt-bio-container">
-					<h4>{{ shirt.bio }}</h4>
+					<h2 id="shirt-bio-text">Bio: {{ shirt.bio }}</h2>
 				</div>
+
+				<div class="font-awesome-icon">
+					<span><i class="fa fa-bolt fa-lg"></i></span>
+				</div>
+			</div>
+
+
+
 			</div>
 		</div>
 	</div>

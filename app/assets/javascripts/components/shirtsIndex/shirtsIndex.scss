@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	font-family: Arial
 }
 
 body {
@@ -68,12 +69,29 @@ body {
  		height: 200px;
  	}
 
+ 	.name-bio-icon-container {
+ 		background: salmon;
+ 	}
+
  	.shirt-name-container {
  		background: white;
  	}
 
+ 	#shirt-name-text {
+ 		font-size: 30px;
+ 		padding-left: 1rem;
+ 		letter-spacing: .1rem;
+ 	}
+
  	.shirt-bio-container {
  		background: lightgreen;
+
+ 	}
+
+ 	#shirt-bio-text {
+ 		font-size: 30px;
+ 		padding-left: 1rem;
+ 		letter-spacing: .1rem;
  	}
 
  	.shirt-link-container {
@@ -102,13 +120,17 @@ body {
  	a.share-link, a.shirt-link, a.comment-link {
  		font-size: 1rem;
  		color: white;
- 		padding: 2rem;
  		letter-spacing: .2rem;
 
  	}
 
  	a {
  		text-decoration: none;
+ 	}
+
+ 	.font-awesome-icon {
+ 		font-size: 50px;
+ 		color: white;
  	}
 
 
