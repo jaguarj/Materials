@@ -5,7 +5,7 @@ angular
 ShirtsEditController.$inject = ['$stateParams', '$state', 'shirtsService' ];
 
 function ShirtsEditController($stateParams, $state, shirtsService) {
-	var vm this;
+	var vm = this;
 
 	vm.shirt = {};
 

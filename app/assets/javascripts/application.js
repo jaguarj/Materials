@@ -50,12 +50,15 @@ angular
 				component: 'shirtsEdit'
 			})
 
-
-
 			.state('comments', {
 				url: '/comments',
 				component: 'commentsPage'
-			});
+			})
+
+			.state('users', {
+				url: '/users/:id',
+				component: 'usersShow'
+			})
 
 	// Fallback router
 	$urlRouterProvider.otherwise('/');
@@ -65,7 +68,7 @@ angular
 		enabled: true,
 		requireBase: false
 	});
-
-
 });
+
+
 

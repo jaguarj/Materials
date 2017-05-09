@@ -1,6 +1,9 @@
 * Get all shirts showing up on index page and looking alright. Done.
+
 * When I click on a shirt (ui-sref), ShirtsShowController will talk to the ShirtsService and
 * ask the Rails API for a single shirt.
 
 * Show that single shirt on the shirtsShow.html page.
-* application.js - must make a shirtsShow state
+
+
+* application.js - must make a shirtsShow state. Done.

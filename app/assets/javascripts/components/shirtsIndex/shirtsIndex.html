@@ -2,12 +2,13 @@
 
 <div class="shirts-body-page-container">
 	<!-- Main Container for all divs on page -->
-	<div ng-repeat="shirt in $ctrl.shirts" class="main-test-container">
 
-	<div class="test-container">
-		<div class="shirt-container">
-			<img class="shirt" ng-src="{{ shirt.image }}"/>
-		</div>
+
+	<div ng-repeat="shirt in $ctrl.shirts" class="main-test-container">
+		<div class="test-container">
+			<div class="shirt-container">
+				<a ui-sref="shirtsShow({id: shirt.id })"><img class="shirt" ng-src="{{ shirt.image }}"/></a>
+			</div>
 
 <!-- Add the shirt buttons class to the shirts show page -->
 		<div class='shirt-buttons'>

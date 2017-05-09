@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   namespace :api do
   	resources :shirts
   	resources :comments
+  	resources :users
   end
 
 

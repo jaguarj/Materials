@@ -20,13 +20,12 @@ function ShirtsNewController($state, shirtsService) {
 	vm.saveShirt = saveShirt;
 
   function saveShirt() {
-    shirtsService.creatShirt(vm.shirt).then(function(resp) {
+    shirtsService.createShirt(vm.shirt).then(function(resp) {
       if(resp.status == 201) {
         $state.go('shirtsShow', { id: resp.data.id })
       }
       else
         alert('Error: Could not create shirt!')
-      }
     });
   }
 }

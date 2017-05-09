@@ -2,9 +2,9 @@ angular
 	.module('Materials')
 	.controller('ShirtsShowController', ShirtsShowController)
 
-ShirtsShowController.$inject = ['$state', 'shirtsService'];
+ShirtsShowController.$inject = ['$stateParams', 'shirtsService'];
 
-function ShirtsShowController($state, shirtsService) {
+function ShirtsShowController($stateParams, shirtsService) {
 	var vm = this;
 
 	vm.shirt = {};
