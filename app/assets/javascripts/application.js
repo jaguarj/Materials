@@ -38,14 +38,19 @@ angular
 				component: 'shirtsNew'
 			})
 
+			// make state for shirtsShow
+
 			.state('shirtsShow', {
 				url: '/shirts/:id',
 				component: 'shirtsShow'
 			})
 
+			.state('shirtsEdit', {
+				url: '/shirts/:id/edit',
+				component: 'shirtsEdit'
+			})
 
 
-			// make state for shirtsShow
 
 			.state('comments', {
 				url: '/comments',
