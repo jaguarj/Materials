@@ -38,6 +38,13 @@ angular
 				component: 'shirtsNew'
 			})
 
+			.state('shirtsShow', {
+				url: '/shirts/:id',
+				component: 'shirtsShow'
+			})
+
+
+
 			// make state for shirtsShow
 
 			.state('comments', {
