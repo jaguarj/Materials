@@ -3,15 +3,7 @@ class Api::UsersController < ApplicationController
 		@user = User.find(params[:id])
 		@shirts = @user.shirts
 
-		binding.pry
-
-
-
-		respond_to do |format|
-  		format.json  { render :json => @user.to_json(:include => [@shirts])}
-		end
-
-
+		render json: @user, include: [:shirts]
 	end
 
 

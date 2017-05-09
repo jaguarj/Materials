@@ -14,8 +14,7 @@ function UsersShowController($stateParams, usersService) {
 	console.log($stateParams.id)
 	usersService.getUser($stateParams.id).then(function(resp) {
 		vm.user = resp.data;
-		vm.shirts = resp.data;
-		console.log(resp);
+		vm.shirts = resp.data.shirts;
 	});
 
 }
