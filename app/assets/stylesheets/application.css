@@ -85,13 +85,35 @@ nav a:hover {
 
 /* Sign up Form, Devise=> registration => new.html.erb */
 .sign-up-container {
-	background: red;
+	max-width: 50rem;
+	background: orange;
+	margin: 0 auto;
+	padding: 2rem;
 }
 
 #sign-up-h1 {
-	background: pink;
+	background: #eee;
+	text-align: center;
 }
 
+input {
+	color: red;
+}
 
+.field .sign-up-email input {
+	width: 300px;
+	height: 30px;
+	border: none;
+	margin-top: 1rem;
+}
+
+ input {
+	font-size: 1.5rem;
+}
+
+.sign-up-inner-container {
+	background: red;
+	margin-top: 1rem;
+}
 
 
