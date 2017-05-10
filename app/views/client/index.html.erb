@@ -17,29 +17,14 @@
     <div class="logo">
       <%= image_tag "logo1.svg", :class => "logo" %>
     </div>
-
-
-    <!-- <img ng-src="{{ app/assets/images/logo1.svg }}" alt="materials logo"/> -->
-    <%#= asset_path("logo1.svg") %>
   </div>
     <nav>
       <% if user_signed_in? %>
         <%= link_to 'Home', root_path %>
-
-
-
         <a ui-sref="users({ id: <%= current_user.id %> })">Profile</a>
-
-        <%#= link_to "Profile", current_user %>
         <%= link_to 'Edit', edit_user_registration_path, target: '_self' %>
-
-
-         <%= link_to 'About', about_path, target: '_self' %>
-
-
+        <%= link_to 'About', about_path, target: '_self' %>
         <%= link_to 'Contact', contact_path, target: '_self' %>
-
-
         <%= link_to 'Sign out', destroy_user_session_path, method: 'delete', target: '_self' %>
       <% end %>
     </nav>
