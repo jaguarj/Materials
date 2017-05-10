@@ -24,6 +24,34 @@
     <nav>
       <% if user_signed_in? %>
         <%= link_to 'Home', root_path %>
+        <%#= current_user.name %>
+
+
+        <a ui-sref="users({ id: <%= current_user.id %> })">Profile</a>
+
+
+      <!--  <a ui-sref='users({ url: users:id })'> Test</a> -->
+
+
+     <!--    .state('users', {
+        url: '/users/:id',
+        component: 'usersShow'
+      }) -->
+
+        <!-- <a ui-sref="partyDetail({ partyID: id, partyLocation: location })">See the Party</a> -->
+
+     <!--    $stateProvider
+
+    .state('partyDetail', {
+        url: '/party/:partyID/:partyLocation'
+    }); -->
+
+
+
+
+
+
+
         <%#= link_to "Profile", current_user %>
         <%= link_to 'Edit', edit_user_registration_path, target: '_self' %>
         <%= link_to 'Sign out', destroy_user_session_path, method: 'delete', target: '_self' %>
