@@ -1,25 +1,33 @@
+<h1>Users Profile Page</h1>
+
+<!-- <pre>{{$ctrl}}</pre> -->
+<!-- {{$ctrl.user.avatar}} -->
+
+
+<a ui-sref="shirtsNew({id: users.id})">Add a shirt!</a>
+
 <div class="shirts-body-page-container">
 	<!-- Main Container for all divs on page -->
 
-
 	<div ng-repeat="shirt in $ctrl.shirts" class="main-test-container">
+
 		<div class="test-container">
 			<div class="shirt-container">
-				<a ui-sref="shirtsShow({id: shirt.id })"><img class="shirt" ng-src="{{ shirt.image }}"/></a>
+				<img class="shirt" ng-src="{{ shirt.image }}"/>
 			</div>
 
 <!-- Add the shirt buttons class to the shirts show page -->
 		<div class='shirt-buttons'>
-			<!-- <div class="shirt-link-container">
-				<button class="main-shirt-buttons"><a class="share-link" href="www.facebook.com">Share!</a></button>
-			</div> -->
 			<div class="shirt-link-container">
-				<button class="main-shirt-buttons"><a class="shirt-link" href="{{ shirt.url }}" target="_blank">Find Me!</a></button>
+				<button class="main-shirt-buttons"><a class="share-link" href="www.facebook.com">Share!</a></button>
 			</div>
-			<!-- <div class="shirt-link-container">
+			<div class="shirt-link-container">
+				<button class="main-shirt-buttons"><a class="shirt-link" href="{{ shirt.url }}">Find Me!</a></button>
+			</div>
+			<div class="shirt-link-container">
 				<button class="main-shirt-buttons"><a class="comment-link" href="#">Comments!</a></button>
 			</div>
- -->		</div>
+		</div>
 		<div class="shirt-details-container">
 			<div class="test-inside-container">
 				<div class="name-bio-icon-container">
@@ -30,9 +38,14 @@
 						<h2 id="shirt-bio-text">Bio: {{ shirt.bio }}</h2>
 					</div>
 				</div>
-				<!-- <div class="font-awesome-icon">
+				<div class="font-awesome-icon">
 					<i class="fa fa-star fa-lg"></i>
-				</div> -->
+				</div>
+
+				<a ui-sref="shirtsEdit({ id: shirt.id })">Edit shirt!</a>
+				<a href="/api/shirts/{{ shirt.id }}" data-method="DELETE" data-confirm="Are you sure?">Delete</a>
+
+
 			</div>
 		</div>
 	</div>

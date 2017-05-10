@@ -16,36 +16,72 @@
  *= require_tree .
  *= require_self
  */
-
+* {
+	box-sizing: border-box;
+}
 body {
 	margin: 0;
 }
 
 header {
-	background: red;
+	background: transparent;
 	display: flex;
 	justify-content: space-between;
-	height: 4rem;
+	margin: 0 0 3rem 0;
+	width: 100%;
+	border-bottom: 3px solid black;
+}
+.logo-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 0 1rem 20px;
 
 }
 
-.logo {
-	background: yellow;
+.logo  {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	padding: 1rem;
+	justify-content: space-between;
+	max-width: 100px;
+	max-height: 100px;
+	transition: all .4s ease-in-out;
+	/*background-image: url(logo6.svg);*/
+	/*background-image: url(/assets/logo4.svg);*/
+
+
+	/*background-image: url(<%= asset_path 'logo1.svg' %>);
+*/	/*margin-left: 2rem;*/
+	/*padding: .5rem 0 0 1.7rem;*/
+
+
+}
+
+.logo:hover {
+	/*background-image: url(<%= asset_path 'logo4.svg' %>);*/
+	background: white;
+
 }
 
 nav {
-	background: teal;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 1rem;
+	box-sizing: border-box;
+    display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	margin-right: 2rem;
+    width: 100%;
+	font-size: 1.5rem;
 }
 
+nav a {
+	padding: 1rem;
+	color: black;
 
+
+}
+
+nav a:hover {
+		border-bottom: 3px solid black;
+}
 
 /*a {
 	padding: 3rem;

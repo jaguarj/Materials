@@ -1,0 +1,283 @@
+/** {
+	box-sizing: border-box;
+}
+
+body {
+		background: lightblue;
+
+	h1 {
+		font-family: Arial, sans-serif;
+		color: red;
+
+	}
+
+	.main-test-container {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin: 10px 1px;
+		padding: .5rem;
+		background: yellow;
+
+
+	}
+
+ 	.test-container {
+ 		display: flex;
+ 		align-items: center;
+ 		justify-content: space-around;
+ 		box-sizing: border-box;
+ 		max-height: 400px;
+ 		padding: 20px;
+ 		margin: 10px 0px;
+ 		border: 20px solid black;
+ 		background: orange;
+
+ 	}
+
+ 	.test-inside-container {
+ 		display: flex;
+ 		align-items: center;
+ 		width: auto;
+ 		height: 200px;
+ 		background: red;
+ 		border: 2px solid black;
+
+ 	}
+
+ 	p.test-p {
+ 		color: blue;
+ 	}
+}
+*/
+/* line 1, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+* {
+  box-sizing: border-box;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  /*font-family: 'Quicksand', sans-serif;*/
+  /*font-family: 'Karla', sans-serif;*/
+  /*font-family: 'Hind Siliguri', sans-serif;*/
+  /*font-family: 'Heebo', sans-serif;*/
+  /*font-family: 'Didact Gothic', sans-serif;*/
+  /*font-family: 'Julius Sans One', sans-serif;*/
+  /*font-family: 'Pragati Narrow', sans-serif;*/
+  /*font-family: 'Antic', sans-serif;*/
+  margin: 0;
+}
+
+/* line 17, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+body {
+  background: lightblue;
+}
+
+/* line 21, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+h1 {
+  font-family: Arial, sans-serif;
+  color: red;
+}
+
+/* line 27, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirts-body-page-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* line 35, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.main-test-container {
+  display: flex;
+  justify-content: center;
+  /*	margin: 10px 1px;*/
+  padding: .5rem;
+  max-width: 40rem;
+  /*background: yellow;*/
+}
+
+/* line 46, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.test-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-height: auto;
+  /*margin: 10px 0px;*/
+  border: 20px solid black;
+  background: orange;
+}
+
+/* line 59, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.test-inside-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background: black;
+}
+
+/* line 69, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+img.shirt {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+/* line 75, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background: pink;*/
+  /*margin-top: 20px;*/
+  width: 100%;
+}
+
+/* line 85, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.name-bio-icon-container {
+  /*background: salmon;*/
+}
+
+/* line 89, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-name-container {
+  /*background: white;*/
+  color: white;
+}
+
+/* line 94, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+#shirt-name-text {
+  font-size: 30px;
+  padding-left: 1rem;
+  letter-spacing: .1rem;
+}
+
+/* line 100, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-bio-container {
+  /*background: lightgreen;*/
+  color: white;
+  background: black;
+  height: 70px;
+}
+
+/* line 108, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+#shirt-bio-text {
+  font-size: 30px;
+  padding-left: 1rem;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+}
+
+/* line 115, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-link-container {
+  /*background: gray;*/
+}
+
+/* line 120, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-buttons {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  transition: all 2s ease-in-out;
+}
+
+/* line 131, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-buttons:hover {
+  		/*display: flex;
+   		align-items: center;
+   		justify-content: space-between;*/
+}
+
+/* line 137, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.main-shirt-buttons {
+  border: none;
+  background: black;
+  color: white;
+  height: 2rem;
+  transition: all .1s ease-in-out;
+}
+
+/* line 146, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.main-shirt-buttons:hover {
+  border-bottom: 4px solid white;
+}
+
+/* line 154, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+a.share-link, a.shirt-link, a.comment-link {
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: .2rem;
+}
+
+/* line 161, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 165, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.font-awesome-icon {
+  display: flex;
+  align-items: flex-end;
+  /*background: blue;*/
+  font-size: 40px;
+  color: white;
+}
+/* line 1, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.show-shirt {
+  color: red;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+
+
+ */
+
+
+body {
+	margin: 0;
+}
+
+header {
+	background: red;
+	display: flex;
+	justify-content: space-between;
+	height: 4rem;
+
+}
+
+.logo {
+	background: yellow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+nav {
+	background: teal;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+
+
+/*a {
+	padding: 3rem;
+}*/

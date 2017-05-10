@@ -1,0 +1,17 @@
+<h1>Add New Shirt</h1>
+
+<form>
+  <label>Name</label>
+  <input ng-model="$ctrl.shirt.name" />
+  <br/>
+  <label>Bio</label>
+  <textarea ng-model="$ctrl.shirt.bio"></textarea>
+  <br/>
+  <label>Image</label>
+  <input ng-model="$ctrl.shirt.image" />
+  <br/>
+  <label>Url</label>
+  <input ng-model="$ctrl.shirt.url" />
+  <br/>
+  <button ng-click="$ctrl.saveShirt()">Save</button>
+<form>
