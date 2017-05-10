@@ -1,3 +1,26 @@
-.contact-content {
+.contact-container {
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+	letter-spacing: .03rem;
+	line-height: 2rem;
+
+
+
+}
+
+#contact-h1 {
+	text-align: center;
 	background: #eee;
+	padding: .5rem 0;
+}
+
+#contact-email {
+	color: black;
+	transition: color .3s ease-in-out;
+}
+
+#contact-email:hover {
+	color: #aaa;
 }

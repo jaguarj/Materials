@@ -10,7 +10,7 @@ Thrifting was also another fun adventure, but that takes a lot of time
 sifting through all the hand-me-downs at Goodwill, plus there is no guarentee
 you'll actually find something.
 
-Which led me to make a website where I, and my friends, could express what we
+Which led me to make a website where, I and my friends, could express what we
 thought was cool and consumable.
 
 **Materials Creative Co.** is a website where a user can view t-shirts, find
