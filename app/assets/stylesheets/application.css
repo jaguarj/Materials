@@ -83,6 +83,15 @@ nav a:hover {
 		border-bottom: 3px solid black;
 }
 
-/*a {
-	padding: 3rem;
-}*/
+/* Sign up Form, Devise=> registration => new.html.erb */
+.sign-up-container {
+	background: red;
+}
+
+#sign-up-h1 {
+	background: pink;
+}
+
+
+
+
