@@ -84,7 +84,7 @@ nav a:hover {
 }
 
 /* Sign up Form, Devise=> registration => new.html.erb */
-/*.sign-up-container {
+.sign-up-container {
 	max-width: 50rem;
 	background: orange;
 	margin: 0 auto;
@@ -113,11 +113,18 @@ input {
 
 .sign-up-inner-container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	background: red;
 	margin-top: 1rem;
 	font-size: 1.2rem;
 	width: 100%;
 }
-*/
+
+#devise-links {
+	display: flex;
+	justify-content: space-around;
+	max-height: 2rem;
+	font-size: 1.2rem;
+	border: 1px solid black;
+}
 

@@ -33,9 +33,9 @@ gem 'devise'
 gem 'angular_rails_csrf'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
-gem 'paperclip', '~> 5.1'
-gem 'aws-sdk'
-gem 'dotenv-rails', groups: [:development, :test]
+# gem 'paperclip', '~> 5.1'
+# gem 'aws-sdk'
+# gem 'dotenv-rails', groups: [:development, :test]
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
