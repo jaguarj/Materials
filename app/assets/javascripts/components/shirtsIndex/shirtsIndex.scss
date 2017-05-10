@@ -72,6 +72,8 @@ body {
  	img.shirt {
  		max-width: 400px;
  		max-height: 400px;
+ 		transition: all .5s ease-in-out;
+
  	}
 
  	img.shirt:hover {
