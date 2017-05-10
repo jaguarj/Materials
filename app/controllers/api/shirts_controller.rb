@@ -22,18 +22,18 @@ class Api::ShirtsController < ApplicationController
 
   def update
   	@shirt = current_user.shirts.find(params[:id])
-
-  	if @shirt.save
+    @shirt.update(shirt_params)
+    if @shirt.save(shirt_params)
   		render json: @shirt, status: :ok
   	else
-  		render json: @note.errors, status: :unproccesable_entity
+  		render json: @shirt.errors, status: :unproccesable_entity
   	end
   end
 
   def destroy
   	@shirt = current_user.shirts.find(params[:id])
 
-  	@note.destroy
+  	@shirt.destroy
 
   	render json: '', status: :no_content
 

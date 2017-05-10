@@ -1,27 +1,16 @@
-<h1>Users Show Page</h1>
+<h1>Users Profile Page</h1>
 
-<pre>{{$ctrl}}</pre>
+<!-- <pre>{{$ctrl}}</pre> -->
+<!-- {{$ctrl.user.avatar}} -->
 
-<div>
-
-
-</div>
 
 <a ui-sref="shirtsNew({id: users.id})">Add a shirt!</a>
-<a ui-sref="shirtsEdit({id: users.id})">Edit shirt!</a>
-<a ui-sref="/api/users/{{ {id: users.id} }}" data-method="DELETE" data-confirm="Are you sure?">Delete</a>
-
-
-<!-- <a ui-sref="shirtsShow({id: shirt.id })"></a> -->
-
-<!-- <td><a ui-sref="usersEdit({id: users.id})">Edit</a></td> -->
-<!-- <td><a href="/api/users/{{ note.id }}" data-method="DELETE" data-confirm="Are you sure?">Delete</a></td> -->
 
 <div class="shirts-body-page-container">
 	<!-- Main Container for all divs on page -->
 
-
 	<div ng-repeat="shirt in $ctrl.shirts" class="main-test-container">
+
 		<div class="test-container">
 			<div class="shirt-container">
 				<img class="shirt" ng-src="{{ shirt.image }}"/>
@@ -52,6 +41,11 @@
 				<div class="font-awesome-icon">
 					<i class="fa fa-star fa-lg"></i>
 				</div>
+
+				<a ui-sref="shirtsEdit({ id: shirt.id })">Edit shirt!</a>
+				<a href="/api/shirts/{{ shirt.id }}" data-method="DELETE" data-confirm="Are you sure?">Delete</a>
+
+
 			</div>
 		</div>
 	</div>

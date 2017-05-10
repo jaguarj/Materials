@@ -23,10 +23,6 @@ angular
 	.module('Materials', ['ui.router'])
 	.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 		$stateProvider
-			.state('home', {
-				url: '/',
-				component: 'homePage'
-			})
 
 			.state('shirts', {
 				url: '/shirts',
@@ -61,7 +57,7 @@ angular
 			})
 
 	// Fallback router
-	$urlRouterProvider.otherwise('/');
+	$urlRouterProvider.otherwise('/shirts');
 
 	// Enable HTML5 Mode for SEO
 	$locationProvider.html5Mode({
