@@ -17,23 +17,29 @@
             <%= f.password_field :password, autocomplete: "off" %>
           </div>
 
-          <div class='log-in-remember-me'>
+          <div class='log-in-remember-me-container'>
+
+          <div class="input-field-remember-me">
             <% if devise_mapping.rememberable? -%>
-              <div class="input-field">
+            <div id="remember-me-checkbox">
                 <%= f.check_box :remember_me %>
+            </div>
+
+            <div id="remember-me-label">
                 <%= f.label :remember_me %>
+            </div>
               </div>
             <% end -%>
           </div>
-
           <div class="log-in-submit-btns">
             <div class="actions" id="log-in-submit-btn">
-              <%= f.submit "Log in" %>
+              <%= f.submit "Log In" %>
+              <div id='log-in-devise-links'>
+              <%= render "devise/shared/links" %>
+              </div>
             </div>
 
-            <div id='devise-links'>
-             <%= render "devise/shared/links" %>
-            </div>
+
         </div>
       <% end %>
     </div>

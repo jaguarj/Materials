@@ -142,6 +142,20 @@ input[type=password]:focus {
     border-bottom: 3px solid #000;
 }
 
+/*input[type=remember_me]:focus {
+
+}*/
+
+/*input[type=checkbox] {
+	padding: 1px;
+}*/
+
+/*input[type=remember_me]  {
+	color: blue;
+}
+*/
+
+
 input[type=submit] {
 	background: none;
 	transition: all .1s ease-in-out;
@@ -152,7 +166,7 @@ input[type=submit]:hover {
 	border-bottom: 3px solid #000;
 }
 
-
+/* Do not touch */
 .input-field input {
 	width: 300px;
 	height: 30px;
@@ -160,9 +174,7 @@ input[type=submit]:hover {
 
 }
 
-
-
-.sign-up-submit-btns {
+.sign-up-submit-btns  {
 	display: flex;
 	justify-content: space-around;
 	width: auto;
@@ -170,7 +182,51 @@ input[type=submit]:hover {
 
 }
 
-#sign-up-submit-btn  {
+.log-in-remember-me-container {
+	display: flex;
+	justify-content: flex-start;
+	color: black;
+	font-size: 1.6rem;
+	/*border: 1px solid black;*/
+	width: 35%;
+
+}
+
+.input-field-remember-me {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
+
+
+.log-in-submit-btns {
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+	margin-top: 1rem 0;
+	/*margin: 1rem 0;
+	border: 1px solid black;
+*//*	background: red;*/
+}
+
+#log-in-submit-btn a {
+	display: flex;
+	justify-content: center;
+	/*flex-wrap: wrap;*/
+	color: black;
+	padding-right: 1rem;
+
+}
+
+
+#remember-me-checkbox input[type=checkbox] {
+	/*display: flex;
+	justify-content: center;*/
+	margin-right: 10px;
+}
+
+
+#sign-up-submit-btn {
 	display: flex;
 	justify-content: center;
 	width: auto;
@@ -186,6 +242,17 @@ input[type=submit]:hover {
 
 }
 
+#log-in-devise-links {
+	display: flex;
+	justify-content: flex-start;
+	color: black;
+	font-size: 1.6rem;
+	border: 1px solid black;
+	background: pink;
+
+}
+
+
 #devise-links a {
 	color: black;
 	transition: all .1s ease-in-out;
@@ -196,6 +263,7 @@ input[type=submit]:hover {
 	border-bottom: 3px solid #000;
 
 }
+
 
 
 
