@@ -65,7 +65,6 @@ header {
 /* Main navigation styles */
 
 nav {
-	/*box-sizing: border-box;*/
     display: flex;
 	align-items: flex-start;
 	justify-content: flex-end;
@@ -81,14 +80,14 @@ nav a {
 }
 
 nav a:hover {
-		border-bottom: 3px solid black;
+	border-bottom: 3px solid black;
 }
 
 /* Sign up Form, Devise=> registration => new.html.erb */
 
 .sign-up-container {
 	max-width: 50rem;
-	background: orange;
+	/*background: orange;*/
 	margin: 0 auto;
 	padding: 2rem;
 }
@@ -97,13 +96,6 @@ nav a:hover {
 	background: #eee;
 	text-align: center;
 }
-
-/*.field input {
-	width: 300px;
-	height: 30px;
-	margin: 1rem 0;
-
-}*/
 
 /* Input styles */
 
@@ -122,15 +114,15 @@ button:focus {
 }
 
 input[type=text]:focus {
-    border-bottom: 3px solid #555;
+    border-bottom: 3px solid #000;
 }
 
 input[type=email]:focus {
-    border-bottom: 3px solid #555;
+    border-bottom: 3px solid #000;
 }
 
 input[type=password]:focus {
-    border-bottom: 3px solid #555;
+    border-bottom: 3px solid #000;
 }
 
 input[type=submit] {
@@ -140,7 +132,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-	border-bottom: 3px solid #555;
+	border-bottom: 3px solid #000;
 }
 
 
