@@ -87,11 +87,12 @@ nav a:hover {
 .error-messages-main {
 	max-width: 50%;
 	margin: 0 auto;
-	background: color;
-}
-.notice, .alert {
 	color: red;
 }
+
+/*.notice, .alert {
+	color: red;
+}*/
 
 
 

@@ -1,0 +1,32 @@
+.users-profile-page {
+	/*margin: 0 auto;*/
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+#add-shirt a {
+	font-size: 1.2rem;
+	letter-spacing: .2rem;
+	color: black;
+	border-bottom: 3px solid transparent;
+	transition: all .1s ease-in-out;
+}
+
+#add-shirt a:hover {
+	border-bottom: 3px solid #000;
+
+}
+
+.edit-delete-shirt-links a {
+	font-size: 1.2rem;
+	letter-spacing: .2rem;
+	color: black;
+	border-bottom: 3px solid transparent;
+	transition: all .1s ease-in-out;
+
+}
+
+.edit-delete-shirt-links a:hover {
+	border-bottom: 3px solid #000;
+}
+
