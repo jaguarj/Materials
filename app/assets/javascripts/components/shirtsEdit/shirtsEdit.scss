@@ -1,0 +1,67 @@
+.edit-shirt-page {
+	font-size: 1.2rem;
+	/*background: blue;*/
+	/*text-align: justify;*/
+
+
+}
+
+#edit-shirt-headline {
+	text-align: center;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+
+}
+
+.edit-shirt-page-inside-content {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	/*background: red;*/
+}
+
+#textarea {
+	width: 98%;
+	margin-top: 1rem;
+	background: #eee;
+}
+input[type=text] {
+    border-bottom: 3px solid #000;
+
+}
+
+.edit-titles label {
+	border: 3px solid transparent;
+	letter-spacing: .2rem;
+	transition: all .1s ease-in-out;
+}
+
+.edit-titles:hover {
+	border-bottom: 3px solid #000;
+	color: red;
+}
+
+.edit-shirt-form {
+
+}
+
+#shirt-name {
+
+	width: 100%;
+	margin: 1rem 0;
+}
+
+#shirt-image {
+
+	width: 100%;
+	margin: 1rem 0;
+}
+
+#shirt-url {
+
+	width: 100%;
+	margin: 1rem 0;
+}
+
+
