@@ -85,14 +85,29 @@ nav a:hover {
 
 /* Sign up Form, Devise=> registration => new.html.erb */
 
-.sign-up-container {
+.sign-up-container, .log-in-container {
 	max-width: 50rem;
 	/*background: orange;*/
 	margin: 0 auto;
 	padding: 2rem;
 }
 
-#sign-up-h1 {
+
+.sign-up-inner-container {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	width: 100%;
+
+}
+
+.sign-up-inner-content {
+	/*background: pink;*/
+
+}
+
+#sign-up-h1, #log-in-h1 {
 	background: #eee;
 	text-align: center;
 }
@@ -145,19 +160,7 @@ input[type=submit]:hover {
 
 }
 
-.sign-up-inner-container {
-	display: flex;
-	justify-content: flex-start;
-	margin-top: 1rem;
-	font-size: 1.2rem;
-	width: 100%;
 
-}
-
-.sign-up-inner-content {
-	/*background: pink;*/
-
-}
 
 .sign-up-submit-btns {
 	display: flex;
