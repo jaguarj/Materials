@@ -26,10 +26,7 @@
 	margin-top: 1rem;
 	background: #eee;
 }
-input[type=text] {
-    border-bottom: 3px solid #000;
 
-}
 
 .edit-titles label {
 	border: 3px solid transparent;
@@ -39,29 +36,53 @@ input[type=text] {
 
 .edit-titles:hover {
 	border-bottom: 3px solid #000;
-	color: red;
+
 }
 
 .edit-shirt-form {
 
 }
 
-#shirt-name {
-
+#shirt-name,
+#shirt-image,
+#shirt-url
+ 	{
 	width: 100%;
 	margin: 1rem 0;
+	color: red;
+	transition: all .1s ease-in-out;
 }
 
-#shirt-image {
+#shirt-name:hover,
+#shirt-image:hover,
+#shirt-url:hover
+ 	{
+ 	/*border-bottom: 3px solid #000;*/
 
-	width: 100%;
-	margin: 1rem 0;
+ 	background: #eee;
 }
 
-#shirt-url {
-
-	width: 100%;
-	margin: 1rem 0;
+#shirt-name input[type=text] {
+	background: none;
+	transition: all .1s ease-in-out;
+	border-bottom: 3px solid transparent;
 }
 
+#shirt-name input[type=text]:hover {
+	border-bottom: 3px solid #000;
+}
 
+#save-button {
+	outline: none;
+	background: white;
+	border: none;
+	font-size: 1rem;
+	border-bottom: 3px solid transparent;
+	transition: all .1s ease-in-out;
+}
+
+#save-button:hover {
+	cursor: pointer;
+	color: red;
+	border-bottom: 3px solid #000;
+}
