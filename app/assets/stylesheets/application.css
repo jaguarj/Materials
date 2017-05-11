@@ -83,6 +83,14 @@ nav a:hover {
 	border-bottom: 3px solid black;
 }
 
+.notice, .alert {
+	background: red;
+
+}
+
+
+
+
 /* Sign up Form, Devise=> registration => new.html.erb */
 
 .sign-up-container, .log-in-container {
@@ -167,9 +175,10 @@ input[type=submit]:hover {
 
 .sign-up-submit-btns  {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	width: auto;
 	margin: 1rem 0;
+
 
 }
 

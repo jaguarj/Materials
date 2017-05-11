@@ -1,47 +1,41 @@
 <div class="log-in-container">
   <h1 id="log-in-h1">Log In!</h1>
-
-  <div class="log-in-inner-container">
-
-    <div class="log-in-inner-content">
-        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-
-
-          <div class="input-field">
-            <%= f.label :email %><br />
-            <%= f.email_field :email, autofocus: true %>
-          </div>
-
-          <div class="input-field">
-            <%= f.label :password %><br />
-            <%= f.password_field :password, autocomplete: "off" %>
-          </div>
-
-          <div class='log-in-remember-me-container'>
-
-          <div class="input-field-remember-me">
-            <% if devise_mapping.rememberable? -%>
-            <div id="remember-me-checkbox">
-                <%= f.check_box :remember_me %>
+    <div class="log-in-inner-container">
+      <div class="log-in-inner-content">
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <div class="input-field">
+              <%= f.label :email %><br />
+              <%= f.email_field :email, autofocus: true %>
             </div>
 
-            <div id="remember-me-label">
-                <%= f.label :remember_me %>
+            <div class="input-field">
+              <%= f.label :password %><br />
+              <%= f.password_field :password, autocomplete: "off" %>
             </div>
+
+            <div class='log-in-remember-me-container'>
+
+            <div class="input-field-remember-me">
+              <% if devise_mapping.rememberable? -%>
+              <div id="remember-me-checkbox">
+                  <%= f.check_box :remember_me %>
               </div>
-            <% end -%>
-          </div>
-          <div class="log-in-submit-btns">
-            <div class="actions" id="log-in-submit-btn">
-              <%= f.submit "Log In" %>
-              <div id='log-in-devise-links'>
-              <%= render "devise/shared/links" %>
+
+              <div id="remember-me-label">
+                  <%= f.label :remember_me %>
               </div>
+                </div>
+              <% end -%>
             </div>
-
-
-        </div>
-      <% end %>
-    </div>
+            <div class="log-in-submit-btns">
+              <div class="actions" id="log-in-submit-btn">
+                <%= f.submit "Log In!" %>
+                <div id='log-in-devise-links'>
+                <%= render "devise/shared/links" %>
+                </div>
+              </div>
+          </div>
+        <% end %>
+      </div>
   </div>
 </div>
