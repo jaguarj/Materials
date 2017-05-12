@@ -1,13 +1,93 @@
-<h1>Shirts Show Page</h1>
+<div class="shirts-body-page-container">
+	<div class="main-test-container">
+		<div class="shirt-container">
+			<div class="test-container">
+				<div class="shirt-container">
+					<a ui-sref="shirtsShow({id: shirt.id })"><img class="shirt" ng-src="{{ $ctrl.shirt.image }}"/></a>
+				</div>
+				<div class='shirt-buttons'>
+					<div class="shirt-link-container">
+						<!-- <button class="main-shirt-buttons"><a class="share-link" href="www.facebook.com">Share!</a></button> -->
+					</div>
+					<div class="shirt-link-container">
+						<button class="main-shirt-buttons"><a class="shirt-link" href="{{ $ctrl.shirt.url }}">Find Me!</a></button>
+					</div>
+					<div class="shirt-link-container">
+						<!-- <button class="main-shirt-buttons"><a class="comment-link" href="#">Comments!</a></button> -->
+					</div>
+				</div>
+				<div class="shirt-details-container">
+					<div class="test-inside-container">
+						<div class="name-bio-icon-container">
+							<div class="shirt-name-container">
+								<h2 id="shirt-name-text">Name: {{ $ctrl.shirt.name }}</h2>
+							</div>
+							<div class="shirt-bio-container">
+								<h2 id="shirt-bio-text">Bio: {{ $ctrl.shirt.bio }}</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<pre>{{$ctrl.shirt.image}}</pre>
-
-<div class='show-shirt'>Name: {{ $ctrl.shirt.name }} </div>
-<div class='show-shirt'>Bio: {{ $ctrl.shirt.bio }} </div>
-<img class='show-shirt' ng-src="{{$ctrl.shirt.image}}">
-<a href="{{ $ctrl.shirt.url }}" alt="shirt">Find Me! </a>
 
 
+
+
+
+<!-- <a href="{{ $ctrl.shirt.url }}" alt="shirt">Find Me! </a> -->
+
+<!-- </div> -->
+
+
+
+<!-- <div class="shirts-body-page-container"> -->
+	<!-- Main Container for all divs on page -->
+
+	<!-- <div ng-repeat="shirt in $ctrl.shirts" class="main-test-container">
+		<div class="test-container">
+			<div class="shirt-container">
+				<img class="shirt" ng-src="{{ $ctrl.shirt.image }}"/>
+			</div> -->
+
+<!-- Add the shirt buttons class to the shirts show page -->
+		<!-- <div class='shirt-buttons'>
+			<div class="shirt-link-container"> -->
+				<!-- <button class="main-shirt-buttons"><a class="share-link" href="www.facebook.com">Share!</a></button> -->
+			<!-- </div>
+			<div class="shirt-link-container">
+				<button class="main-shirt-buttons"><a class="shirt-link" href="{{ $ctrl.shirt.url }}">Find Me!</a></button>
+			</div>
+			<div class="shirt-link-container"> -->
+				<!-- <button class="main-shirt-buttons"><a class="comment-link" href="#">Comments!</a></button> -->
+		<!-- 	</div>
+		</div>
+		<div class="shirt-details-container">
+			<div class="test-inside-container">
+				<div class="name-bio-icon-container">
+					<div class="shirt-name-container">
+						<h2 id="shirt-name-text">Name: {{ $ctrl.shirt.name }}</h2>
+					</div>
+					<div class="shirt-bio-container">
+						<h2 id="shirt-bio-text">Bio: {{ $ctrl.shirt.bio }}</h2>
+					</div>
+				</div> -->
+				<!-- <div class="font-awesome-icon">
+					<i class="fa fa-star fa-lg"></i>
+				</div> -->
+
+<!-- 				<div class="edit-delete-shirt-links">
+					<a ui-sref="shirtsEdit({ id: shirt.id })">Edit Shirt!</a>
+					<a href="/api/shirts/{{ shirt.id }}" data-method="DELETE" data-confirm="Are you sure?" id="shirt-delete">Delete!</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div> -->
 
 
 
