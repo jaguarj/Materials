@@ -257,7 +257,7 @@ input[type=submit]:hover {
 /* Master Devise Links */
 
 
-#devise-links  {
+#devise-links {
 	display: flex;
 	justify-content: center;
 	font-size: 1.6rem;
@@ -277,8 +277,6 @@ input[type=submit]:hover {
 
 }
 
-
-
 #log-in-devise-links {
 	display: flex;
 	justify-content: flex-start;
@@ -294,12 +292,30 @@ input[type=submit]:hover {
 
 }
 
-#log-in-devise-links a:hover {
+#log-in-devise-links a:hover, #devise-links-back a:hover {
 	border-bottom: 3px solid #000;
 
 }
 
+#devise-links-back {
+	/*display: flex;
+	justify-content: space-around;*/
+	font-size: 1.6rem;
+	/*border: 1px solid black;*/
+/*	width: 10px;*/
 
+}
+
+#devise-links-back a {
+	color: black;
+	transition: all .1s ease-in-out;
+	border-bottom: 3px solid transparent;
+	margin-left: 1rem;
+}
+
+#devise-links-cancel {
+	margin-left: 1rem;
+}
 
 
 

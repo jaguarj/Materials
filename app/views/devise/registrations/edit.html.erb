@@ -41,9 +41,11 @@
 
 <div class="sign-up-submit-btns">
   <div class="actions" id="sign-up-submit-btn">
-    <%= f.submit "Update" %>
+    <%= f.submit "Update!" %>
+    <div id="devise-links-cancel">
     <%= button_to "Cancel My Account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
-    <div id="devise-links">
+    </div>
+    <div id="devise-links-back">
     <%= link_to "Back", :back %>
     </div>
   </div>
