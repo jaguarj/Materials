@@ -292,7 +292,8 @@ input[type=submit]:hover {
 
 }
 
-#log-in-devise-links a:hover, #devise-links-back a:hover {
+#log-in-devise-links a:hover,
+#devise-links-back a:hover {
 	border-bottom: 3px solid #000;
 
 }
@@ -322,6 +323,24 @@ input[type=submit]:hover {
 #devise-links-cancel:hover {
 	color: red;
 }
+
+.devise_forgot_email {
+	background: red;
+}
+
+/*.devise_forgot_email a {
+	color: red;
+	margin: 0 0 0 1rem;
+	border-bottom: 3px solid transparent;
+	height: 0;
+	transition: all .1s ease-in-out;
+}
+
+.devise_forgot_email a:hover {
+	border-bottom: 4px solid black;
+}
+*/
+
 
 .devise-label {
 

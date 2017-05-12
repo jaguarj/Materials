@@ -1,16 +1,70 @@
-<h2>Forgot your password?</h2>
+<!-- <h2>Forgot your password?</h2> -->
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
-
+<%#= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%#= devise_error_messages! %>
+<!--
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+    <%#= f.label :email %><br />
+    <%#= f.email_field :email, autofocus: true %>
+  </div> -->
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
+<!--   <div class="actions">
+    <%#= f.submit "Send me reset password instructions" %>
+  </div> -->
+<%# end %>
 
-<%= render "devise/shared/links" %>
+<%#= render "devise/shared/links" %>
+
+
+
+
+
+ <!-- <div class="error-messages-main">
+    <%#= devise_error_messages! %>
+  </div> -->
+
+
+<div class="sign-up-container">
+  <h1 id="sign-up-h1">Forgot Password?</h1>
+  <div class="sign-up-inner-container">
+
+    <div class="sign-up-inner-content">
+      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+
+
+
+        <div class="input-field">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true %>
+        </div>
+
+        <div class="input-field">
+          <%#= f.label :password %>
+          <%# if @minimum_password_length %>
+          <!-- <em>(<%#= @minimum_password_length %> characters minimum)</em> -->
+          <!-- <%# end %><br /> -->
+          <%#= f.password_field :password, autocomplete: "off" %>
+        </div>
+
+        <div class="input-field">
+          <%#= f.label :password_confirmation %><br />
+          <%#= f.password_field :password_confirmation, autocomplete: "off" %>
+        </div>
+
+        <div class="sign-up-submit-btns">
+          <div class="actions" id="sign-up-submit-btn">
+              <%= f.submit "Send me reset password instructions" %>
+          </div>
+
+          <!-- having issues with this form styling below. -->
+
+        </div>
+
+        <div id="devise-forgot-email">
+            <%= render "devise/shared/links", class: "devise_forgot_email" %>
+         </div>
+
+      <% end %>
+    </div>
+  </div>
+</div>
