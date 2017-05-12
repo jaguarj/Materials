@@ -1,3 +1,6 @@
+<!-- This is the shirtsNew page to 'Add a shirt', used the same classes
+for the edit shirt. -->
+
 <div id="edit-shirt-headline">
   <h1 id="edit-shirt-headline-tag">Add Shirt</h1>
 </div>
@@ -10,16 +13,16 @@
 
         <form class="edit-shirt-form">
 
-          <label class="edit-titles">Name:</label>
+          <label class="edit-titles">Name: (15 character max!)</label>
           <br />
 
-          <input id="shirt-name" ng-model="$ctrl.shirt.name" />
+          <input id="shirt-name" maxlength="15" ng-model="$ctrl.shirt.name" />
           <br/>
 
-          <label class="edit-titles">Bio:</label>
+          <label class="edit-titles">Bio: (15 character max!)</label>
           <br />
 
-          <textarea id="textarea" ng-model="$ctrl.shirt.bio"></textarea>
+          <textarea id="textarea" maxlength="15" ng-model="$ctrl.shirt.bio"></textarea>
           <br/>
 
           <label class="edit-titles">Image:</label>
