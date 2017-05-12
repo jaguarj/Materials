@@ -315,7 +315,24 @@ input[type=submit]:hover {
 
 #devise-links-cancel {
 	margin-left: 1rem;
+	color: blue;
+
 }
 
+#devise-links-cancel:hover {
+	color: red;
+}
+
+.devise-label {
+
+	font-size: 1.6rem;
+
+}
+
+.devise-label:hover {
+	color: red;
+	border-bottom: 3px solid #000;
+
+}
 
 
