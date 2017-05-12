@@ -1,0 +1,910 @@
+/** {
+	box-sizing: border-box;
+}
+
+body {
+		background: lightblue;
+
+	h1 {
+		font-family: Arial, sans-serif;
+		color: red;
+
+	}
+
+	.main-test-container {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin: 10px 1px;
+		padding: .5rem;
+		background: yellow;
+
+
+	}
+
+ 	.test-container {
+ 		display: flex;
+ 		align-items: center;
+ 		justify-content: space-around;
+ 		box-sizing: border-box;
+ 		max-height: 400px;
+ 		padding: 20px;
+ 		margin: 10px 0px;
+ 		border: 20px solid black;
+ 		background: orange;
+
+ 	}
+
+ 	.test-inside-container {
+ 		display: flex;
+ 		align-items: center;
+ 		width: auto;
+ 		height: 200px;
+ 		background: red;
+ 		border: 2px solid black;
+
+ 	}
+
+ 	p.test-p {
+ 		color: blue;
+ 	}
+}
+*/
+/* line 1, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+.edit-shirt-page {
+  font-size: 1.2rem;
+}
+
+/* line 5, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+#edit-shirt-headline {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* line 11, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+.edit-shirt-page-inside-content {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* line 18, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+#textarea {
+  width: 98%;
+  margin-top: 1rem;
+  background: #eee;
+}
+
+/* line 24, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+.edit-titles label {
+  border: 3px solid transparent;
+  letter-spacing: .2rem;
+  transition: all .1s ease-in-out;
+}
+
+/* line 30, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+.edit-titles:hover {
+  border-bottom: 3px solid #000;
+}
+
+/* line 34, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+#shirt-name,
+#shirt-image,
+#shirt-url {
+  width: 100%;
+  margin: 1rem 0;
+  color: red;
+  transition: all .1s ease-in-out;
+}
+
+/* line 44, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+#shirt-name:hover,
+#shirt-image:hover,
+#shirt-url:hover {
+  background: #eee;
+}
+
+/* line 51, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+#shirt-name input[type=text] {
+  background: none;
+  transition: all .1s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+/* line 57, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+#shirt-name input[type=text]:hover {
+  border-bottom: 3px solid #000;
+}
+
+/* line 61, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+#save-button {
+  outline: none;
+  background: white;
+  border: none;
+  font-size: 1rem;
+  border-bottom: 3px solid transparent;
+  transition: all .1s ease-in-out;
+}
+
+/* line 70, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsEdit/shirtsEdit.scss */
+#save-button:hover {
+  cursor: pointer;
+  color: red;
+  border-bottom: 3px solid #000;
+}
+/* line 1, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+* {
+  box-sizing: border-box;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  /*font-family: 'Quicksand', sans-serif;*/
+  /*font-family: 'Karla', sans-serif;*/
+  /*font-family: 'Hind Siliguri', sans-serif;*/
+  /*font-family: 'Heebo', sans-serif;*/
+  /*font-family: 'Didact Gothic', sans-serif;*/
+  /*font-family: 'Julius Sans One', sans-serif;*/
+  /*font-family: 'Pragati Narrow', sans-serif;*/
+  /*font-family: 'Antic', sans-serif;*/
+  margin: 0;
+}
+
+/* line 18, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+body {
+  /*background: lightblue;*/
+}
+
+/* line 22, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+/* line 28, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirts-body-page-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* line 38, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.main-test-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 1px;
+  padding: .5rem;
+  max-width: 40rem;
+}
+
+/* line 47, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.test-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-height: auto;
+  /*margin: 10px 0px;*/
+  border-bottom: 2px solid black;
+  /*background: orange;*/
+  /*		box-shadow: 1px 1px 10px 1px;*/
+}
+
+/* line 61, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.test-inside-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background: white;
+}
+
+/* line 72, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+img.shirt {
+  max-width: 400px;
+  max-height: 400px;
+  transition: all .5s ease-in-out;
+}
+
+/* line 79, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+img.shirt:hover {
+  transform: scale(1.1);
+}
+
+/* line 83, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background: pink;*/
+  /*margin-top: 20px;*/
+  width: 100%;
+}
+
+/* line 93, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.name-bio-icon-container {
+  /*background: salmon;*/
+}
+
+/* line 97, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-name-container {
+  /*background: white;*/
+  color: black;
+}
+
+/* line 102, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+#shirt-name-text {
+  font-size: 30px;
+  padding-left: 1rem;
+  letter-spacing: .1rem;
+}
+
+/* line 108, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-bio-container {
+  /*background: lightgreen;*/
+  color: #bbb;
+  background: white;
+  height: 70px;
+}
+
+/* line 117, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+#shirt-bio-text {
+  font-size: 30px;
+  padding-left: 1rem;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+}
+
+/* line 124, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-link-container {
+  /*background: gray;*/
+}
+
+/* line 129, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-buttons {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  transition: all 1s ease-in-out;
+}
+
+/* line 141, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.shirt-buttons:hover {
+  /*background: red;*/
+}
+
+/* line 145, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.main-shirt-buttons {
+  border: none;
+  background: white;
+  /*color: red;*/
+  height: 2rem;
+  transition: all .1s ease-in-out;
+}
+
+/* line 154, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.main-shirt-buttons:hover {
+  border-bottom: 4px solid red;
+}
+
+/* line 162, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+a.share-link, a.shirt-link, a.comment-link {
+  font-size: 1.2rem;
+  color: black;
+  letter-spacing: .2rem;
+}
+
+/* line 169, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 173, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsIndex/shirtsIndex.scss */
+.font-awesome-icon {
+  display: flex;
+  align-items: flex-end;
+  /*background: blue;*/
+  font-size: 40px;
+  color: white;
+}
+/* line 1, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+* {
+  box-sizing: border-box;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  /*font-family: 'Quicksand', sans-serif;*/
+  /*font-family: 'Karla', sans-serif;*/
+  /*font-family: 'Hind Siliguri', sans-serif;*/
+  /*font-family: 'Heebo', sans-serif;*/
+  /*font-family: 'Didact Gothic', sans-serif;*/
+  /*font-family: 'Julius Sans One', sans-serif;*/
+  /*font-family: 'Pragati Narrow', sans-serif;*/
+  /*font-family: 'Antic', sans-serif;*/
+  margin: 0;
+}
+
+/* line 18, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+body {
+  /*background: lightblue;*/
+}
+
+/* line 22, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+/* line 28, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.shirts-body-page-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* line 38, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.main-test-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 1px;
+  padding: .5rem;
+  max-width: 40rem;
+}
+
+/* line 47, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.test-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-height: auto;
+  /*margin: 10px 0px;*/
+  border-bottom: 2px solid black;
+  /*background: orange;*/
+  /*		box-shadow: 1px 1px 10px 1px;*/
+}
+
+/* line 61, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.test-inside-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background: white;
+}
+
+/* line 72, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+img.shirt {
+  max-width: 400px;
+  max-height: 400px;
+  transition: all .5s ease-in-out;
+}
+
+/* line 79, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+img.shirt:hover {
+  transform: scale(1.1);
+}
+
+/* line 83, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.shirt-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background: pink;*/
+  /*margin-top: 20px;*/
+  width: 100%;
+}
+
+/* line 93, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.name-bio-icon-container {
+  /*background: salmon;*/
+}
+
+/* line 97, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.shirt-name-container {
+  /*background: white;*/
+  color: black;
+}
+
+/* line 102, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+#shirt-name-text {
+  font-size: 30px;
+  padding-left: 1rem;
+  letter-spacing: .1rem;
+}
+
+/* line 108, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.shirt-bio-container {
+  /*background: lightgreen;*/
+  color: #bbb;
+  background: white;
+  height: 70px;
+}
+
+/* line 117, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+#shirt-bio-text {
+  font-size: 30px;
+  padding-left: 1rem;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+}
+
+/* line 124, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.shirt-link-container {
+  /*background: gray;*/
+}
+
+/* line 129, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.shirt-buttons {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  transition: all 1s ease-in-out;
+}
+
+/* line 141, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.shirt-buttons:hover {
+  /*background: red;*/
+}
+
+/* line 145, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.main-shirt-buttons {
+  border: none;
+  background: white;
+  /*color: red;*/
+  height: 2rem;
+  transition: all .1s ease-in-out;
+}
+
+/* line 154, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.main-shirt-buttons:hover {
+  border-bottom: 4px solid red;
+}
+
+/* line 162, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+a.share-link, a.shirt-link, a.comment-link {
+  font-size: 1.2rem;
+  color: black;
+  letter-spacing: .2rem;
+}
+
+/* line 169, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 173, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/shirtsShow/shirtsShow.scss */
+.font-awesome-icon {
+  display: flex;
+  align-items: flex-end;
+  /*background: blue;*/
+  font-size: 40px;
+  color: white;
+}
+/* line 1, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/usersShow/usersShow.scss */
+.users-profile-page {
+  /*margin: 0 auto;*/
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* line 7, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/usersShow/usersShow.scss */
+#add-shirt a {
+  font-size: 1.2rem;
+  letter-spacing: .2rem;
+  color: black;
+  border-bottom: 3px solid transparent;
+  transition: all .1s ease-in-out;
+}
+
+/* line 15, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/usersShow/usersShow.scss */
+#add-shirt a:hover {
+  border-bottom: 3px solid #000;
+}
+
+/* line 20, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/usersShow/usersShow.scss */
+.edit-delete-shirt-links a {
+  margin-left: 1.8rem;
+  font-size: 1.2rem;
+  letter-spacing: .2rem;
+  color: black;
+  border-bottom: 3px solid transparent;
+  transition: all .1s ease-in-out;
+}
+
+/* line 30, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/usersShow/usersShow.scss */
+.edit-delete-shirt-links a:hover {
+  border-bottom: 3px solid #000;
+}
+
+/* line 34, /Users/joshseipel1/workspace/Materials/app/assets/javascripts/components/usersShow/usersShow.scss */
+#shirt-delete {
+  margin-left: .5rem;
+}
+/* line 1, /Users/joshseipel1/workspace/Materials/app/assets/stylesheets/about.scss */
+.about-container {
+  max-width: 60rem;
+  margin: 0 auto;
+  letter-spacing: .03rem;
+  line-height: 2rem;
+  padding: 2rem;
+}
+
+/* line 10, /Users/joshseipel1/workspace/Materials/app/assets/stylesheets/about.scss */
+#about-h1 {
+  text-align: center;
+  background: #eee;
+  padding: .5rem 0;
+}
+/* line 1, /Users/joshseipel1/workspace/Materials/app/assets/stylesheets/contact.scss */
+.contact-container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  letter-spacing: .03rem;
+  line-height: 2rem;
+}
+
+/* line 11, /Users/joshseipel1/workspace/Materials/app/assets/stylesheets/contact.scss */
+#contact-h1 {
+  text-align: center;
+  background: #eee;
+  padding: .5rem 0;
+}
+
+/* line 17, /Users/joshseipel1/workspace/Materials/app/assets/stylesheets/contact.scss */
+#contact-email {
+  color: black;
+  transition: color .3s ease-in-out;
+}
+
+/* line 22, /Users/joshseipel1/workspace/Materials/app/assets/stylesheets/contact.scss */
+#contact-email:hover {
+  color: #aaa;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+
+
+ */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+
+header {
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 3rem 0;
+	width: 100%;
+	border-bottom: 3px solid black;
+}
+.logo-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 0 1rem 20px;
+
+}
+
+.logo  {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 100px;
+	max-height: 100px;
+	transition: all .4s ease-in-out;
+	/*background-image: url(logo6.svg);*/
+	/*background-image: url(/assets/logo4.svg);*/
+
+
+	/*background-image: url(<%= asset_path 'logo1.svg' %>);
+*/	/*margin-left: 2rem;*/
+	/*padding: .5rem 0 0 1.7rem;*/
+
+
+}
+
+.logo:hover {
+	/*background-image: url(<%= asset_path 'logo4.svg' %>);*/
+	background: white;
+
+}
+
+/* Main navigation styles */
+
+nav {
+    display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	margin-right: 2rem;
+    width: 100%;
+	font-size: 1.5rem;
+}
+
+nav a {
+	padding: 1rem;
+	color: black;
+
+}
+
+nav a:hover {
+	border-bottom: 3px solid black;
+}
+
+
+.error-messages-main {
+	max-width: 50%;
+	margin: 0 auto;
+	color: red;
+}
+
+/*.notice, .alert {
+	color: red;
+}*/
+
+
+
+
+/* Sign up Form, Devise=> registration => new.html.erb */
+
+.sign-up-container, .log-in-container {
+	max-width: 50rem;
+	/*background: orange;*/
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+
+.sign-up-inner-container, .log-in-inner-container {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	width: 100%;
+
+}
+
+.sign-up-inner-content {
+	/*background: pink;*/
+
+}
+
+#sign-up-h1, #log-in-h1 {
+	background: #eee;
+	text-align: center;
+}
+
+/* Input styles */
+
+input {
+	font-size: 1.5rem;
+	border: none;
+	cursor: pointer;
+	transition: all .1s ease-in-out;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+
+}
+
+input[type=text]:focus {
+    border-bottom: 3px solid #000;
+
+}
+
+input[type=email]:focus {
+    border-bottom: 3px solid #000;
+}
+
+input[type=password]:focus {
+    border-bottom: 3px solid #000;
+}
+
+
+input[type=submit] {
+	background: none;
+	transition: all .1s ease-in-out;
+	border-bottom: 3px solid transparent;
+}
+
+input[type=submit]:hover {
+	border-bottom: 3px solid #000;
+}
+
+
+/* Do not touch */
+.input-field input {
+	width: 300px;
+	height: 30px;
+	margin: 1rem 0;
+
+
+}
+
+
+.sign-up-submit-btns  {
+	display: flex;
+	justify-content: flex-start;
+	width: auto;
+	margin: 1rem 0;
+
+
+}
+
+/* Log In Containers*/
+
+.log-in-remember-me-container {
+	display: flex;
+	justify-content: flex-start;
+	color: black;
+	font-size: 1.2rem;
+	/*border: 1px solid black;*/
+	width: 100%;
+
+
+}
+
+.input-field-remember-me {
+	display: flex;
+	justify-content: flex-start;
+	padding: 1rem;
+
+}
+
+
+.log-in-submit-btns {
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+	margin-top: 1rem 0;
+	/*margin: 1rem 0;
+	border: 1px solid black;
+*//*	background: red;*/
+}
+
+#log-in-submit-btn-sign-up a {
+	display: flex;
+	justify-content: center;
+	color: black;
+	padding-bottom: .2rem;
+	transition: all .1s ease-in-out;
+	border-bottom: 3px solid transparent;
+
+}
+
+#log-in-submit-btn-forgot-pw a {
+	display: flex;
+	justify-content: center;
+	color: black;
+	padding-bottom: .2rem;
+	margin-left: 1rem;
+	border-bottom: 3px solid transparent;
+	transition: all .1s ease-in-out;
+
+}
+
+
+#remember-me-checkbox input[type=checkbox] {
+	margin-right: 10px;
+
+}
+
+
+#sign-up-submit-btn {
+	display: flex;
+	justify-content: center;
+	width: auto;
+
+}
+
+/* Master Devise Links */
+
+
+#devise-links {
+	display: flex;
+	justify-content: center;
+	font-size: 1.6rem;
+	/*border: 1px solid black;*/
+	width: 100px;
+
+}
+
+#devise-links a {
+	color: black;
+	transition: all .1s ease-in-out;
+	border-bottom: 3px solid transparent;
+}
+
+#devise-links a:hover {
+	border-bottom: 3px solid #000;
+
+}
+
+#log-in-devise-links {
+	display: flex;
+	justify-content: flex-start;
+	font-size: 1.6rem;
+	/*border: 1px solid black;*/
+	margin-top: 1rem;
+}
+
+#log-in-devise-links a {
+	color: black;
+	transition: all .1s ease-in-out;
+	border-bottom: 3px solid transparent;
+
+}
+
+#log-in-devise-links a:hover, #devise-links-back a:hover {
+	border-bottom: 3px solid #000;
+
+}
+
+#devise-links-back {
+	/*display: flex;
+	justify-content: space-around;*/
+	font-size: 1.6rem;
+	/*border: 1px solid black;*/
+/*	width: 10px;*/
+
+}
+
+#devise-links-back a {
+	color: black;
+	transition: all .1s ease-in-out;
+	border-bottom: 3px solid transparent;
+	margin-left: 1rem;
+}
+
+#devise-links-cancel {
+	margin-left: 1rem;
+
+
+}
+
+#devise-links-cancel:hover {
+	color: red;
+}
+
+.devise-label {
+
+	/*font-size: 1.6rem;*/
+
+}
+
+.devise-label:hover {
+	border-bottom: 3px solid #000;
+
+}
+
+
