@@ -2,36 +2,40 @@
   <h1 id="edit-shirt-headline-tag">Add Shirt</h1>
 </div>
 
-  <div class="edit-shirt-page">
-  <div class="edit-shirt-page-inside-content">
+<div class="edit-shirt-page">
 
-    <form class="edit-shirt-form">
 
-      <label class="edit-titles">Name:</label>
-      <br />
 
-      <input id="shirt-name" ng-model="$ctrl.shirt.name" />
-      <br/>
+    <div class="edit-shirt-page-inside-content">
 
-      <label class="edit-titles">Bio:</label>
-      <br />
+        <form class="edit-shirt-form">
 
-      <textarea id="textarea" ng-model="$ctrl.shirt.bio"></textarea>
-      <br/>
+          <label class="edit-titles">Name:</label>
+          <br />
 
-      <label class="edit-titles">Image:</label>
-      <br />
+          <input id="shirt-name" ng-model="$ctrl.shirt.name" />
+          <br/>
 
-      <input id="shirt-image" ng-model="$ctrl.shirt.image" />
-      <br/>
+          <label class="edit-titles">Bio:</label>
+          <br />
 
-      <label class="edit-titles">Url:</label>
-      <br />
+          <textarea id="textarea" ng-model="$ctrl.shirt.bio"></textarea>
+          <br/>
 
-      <input id="shirt-url" ng-model="$ctrl.shirt.url" />
-      <br/>
+          <label class="edit-titles">Image:</label>
+          <br />
 
-      <button id="save-button" class="edit-titles" ng-click="$ctrl.saveShirt()">Save</button>
-    <form>
-  </div>
+          <input id="shirt-image" ng-model="$ctrl.shirt.image" />
+          <br/>
+
+          <label class="edit-titles">Url:</label>
+          <br />
+
+          <input id="shirt-url" ng-model="$ctrl.shirt.url" />
+          <br/>
+
+          <button id="save-button" class="edit-titles" ng-click="$ctrl.saveShirt()">Save</button>
+        <form>
+    </div>
 </div>
+
