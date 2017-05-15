@@ -76,6 +76,7 @@ nav {
 nav a {
 	padding: 1rem;
 	color: black;
+	cursor: pointer;
 
 }
 
