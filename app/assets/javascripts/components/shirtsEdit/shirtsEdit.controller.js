@@ -8,7 +8,6 @@ function ShirtsEditController($stateParams, $state, shirtsService) {
 	var vm = this;
 
 	vm.shirt = {};
-
 	vm.saveShirt = saveShirt;
 
 	shirtsService.getShirt($stateParams.id).then(function(resp) {
