@@ -21,7 +21,7 @@
 
 
 angular
-	.module('Materials', ['ui.router'])
+	.module('Materials', ['ui.router', '720kb.socialshare'])
 	.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 		$stateProvider
 
