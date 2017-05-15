@@ -2,19 +2,18 @@
 <html>
   <head>
     <title>Materials Creative Co.</title>
-
-
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
-
   </head>
   <body>
     <header>
-      <div class="logo-container">
+    <div class="logo-container">
   <!-- Do not delete -->
-        <div class="logo">
-          <%= image_tag "logo1.svg", :class => "logo" %>
-        </div>
+       <a href="/">
+          <div class="logo">
+            <%= image_tag "logo1.svg", :class => "logo" %>
+          </div>
+       </a>
     </div>
       <nav>
         <% if user_signed_in? %>
@@ -35,7 +34,6 @@
       <h3 class="notice"><%= notice %></h3>
       <h3 class="alert"><%= alert %></h3>
     </div>
-
 
     <%= yield %>
   </body>

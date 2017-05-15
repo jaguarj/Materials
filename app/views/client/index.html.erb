@@ -9,17 +9,17 @@
     <%= javascript_include_tag 'application', 'https://cdnjs.cloudflare.com/ajax/libs/angular-socialshare/2.3.8/angular-socialshare.min.js', '//assets.pinterest.com/js/pinit.js' %>
 
   </head>
-
   <body>
   <header>
-  <div class="logo-container">
-  <!-- Do not delete -->
+    <div class="logo-container">
+    <!-- Do not delete -->
+    <a href="/">
     <div class="logo">
-      <%= image_tag "logo1.svg", :class => "logo" %>
+        <%= image_tag "logo1.svg", :class => "logo" %>
+      </div>
+      </a>
     </div>
-  </div>
     <nav>
-
       <% if user_signed_in? %>
         <%= link_to 'Home', root_path %>
         <a ui-sref="users({ id: <%= current_user.id %> })">Profile</a>
@@ -27,23 +27,15 @@
         <%= link_to 'About', about_path, target: '_self' %>
         <%= link_to 'Contact', contact_path, target: '_self' %>
         <%= link_to 'Sign out', destroy_user_session_path, method: 'delete', target: '_self' %>
-
       <% end %>
-
-
     </nav>
   </header>
-
-
     <div class="error-messages-main">
       <h3 class="notice"><%= notice %></h3>
       <h3 class="alert"><%= alert %></h3>
     </div>
 
-
     <ui-view></ui-view>
-
-
 
   </body>
 </html>

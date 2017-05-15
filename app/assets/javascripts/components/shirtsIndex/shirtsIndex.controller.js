@@ -9,7 +9,6 @@ function ShirtsIndexController(shirtsService) {
 
   vm.shirts = [];
 
-
   shirtsService.getShirts().then(function(resp) {
     vm.shirts = resp.data;
   });

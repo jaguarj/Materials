@@ -7,7 +7,6 @@ UsersShowController.$inject = ['$stateParams', 'usersService'];
 function UsersShowController($stateParams, usersService) {
 	var vm = this;
 
-
 	vm.user = {};
 	vm.shirts = [];
 
