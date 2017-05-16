@@ -43,7 +43,7 @@ awesome t-shirt style.
 
 * Pinterest
 
-### Inspirations
+### Inspiration
 
 #### [Dribbble](https://dribbble.com/)
 
