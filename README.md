@@ -29,10 +29,6 @@ awesome t-shirt style.
 
 * Angular Js
 
-* Facebook Api
-
-* Twitter Api
-
 * Git & GitHub
 
 * Heroku
@@ -42,12 +38,6 @@ awesome t-shirt style.
 * Adobe Illustrator CC
 
 * Pinterest
-
-### Inspirations
-
-#### [Dribbble](https://dribbble.com/)
-
-### Developer
 
 #### [GitHub - Josh Seipel](https://github.com/jaguarj)
 
