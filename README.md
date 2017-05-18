@@ -7,7 +7,7 @@ want to wear. This lack of awesomeness lit a fire to start making my own
 t-shirts while learning screen printing at home.
 
 Thrifting was also another fun adventure, but that takes a lot of time
-sifting through all the hand-me-downs at Goodwill, plus there is no guarentee
+sifting through all the hand-me-downs at Goodwill, plus there is no guarantee
 you'll actually find something.
 
 Which led me to make a website where, my friends and I, could express what we
@@ -43,7 +43,7 @@ awesome t-shirt style.
 
 * Pinterest
 
-### Inspiration
+### Inspirations
 
 #### [Dribbble](https://dribbble.com/)
 
